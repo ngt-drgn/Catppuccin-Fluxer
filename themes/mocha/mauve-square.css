@@ -1,0 +1,164 @@
+:root
+{
+  /* Status */
+    --status-online: #a6e3a1;
+    --status-idle: #f9e2af;
+    --status-dnd: #eba0ac;
+    --status-offline: #6c7086;
+    --status-danger: #f38ba8;
+
+  /* Backgrounds */
+  --background-primary: #1e1e2e;
+  --background-secondary: #181825;
+  --background-secondary-alt: #11111b;
+  --background-secondary-lighter: hsl(
+    from #181825 h s calc(l + 5)
+  ); 
+  
+  /* Main content bg */
+  --background-tertiary: #313244;
+  --background-textarea: #313244;
+  --background-header-primary: #181825;
+  --background-header-primary-hover: #313244;
+  --background-header-secondary: #11111b;
+
+  /* Background modifiers */
+  --background-modifier-hover: #313244;
+  --background-modifier-selected: #45475a;
+  --background-modifier-accent: #585b70;
+  --background-modifier-accent-focus: #45475a;
+
+  /* Brand */
+  --brand-primary: #cba6f7;
+  --brand-primary-light: hsl(from #cba6f7 h s calc(l + 8));
+  --brand-primary-fill: #1e1e2e;
+  --brand-secondary: hsl(from #cba6f7 h s calc(l - 10));
+
+  /* Text */
+  --text-primary: #cdd6f4;
+  --text-secondary: #bac2de;
+  --text-primary-muted: #a6adc8;
+  --text-tertiary: #9399b2;
+  --text-tertiary-muted: #7f849c;
+  --text-tertiary-secondary: #9399b2;
+  --text-chat: #cdd6f4;
+  --text-chat-muted: #a6adc8;
+  --text-on-brand-primary: #1e1e2e;
+  --text-link: #89b4fa;
+
+  /* Borders */
+  --border-color: #45475a;
+  --border-color-hover: #585b70;
+  --border-color-focus: #cba6f7;
+
+  /* Misc */
+  --accent-purple: #cba6f7;
+  --bg-code: #181825;
+  --guild-list-foreground: #cba6f7;
+
+  /* Alerts */
+  --alert-note-color: #89b4fa;
+  --alert-important-color: #cba6f7;
+  --alert-tip-color: #89b4fa;
+  --alert-warning-color: #f9e2af;
+  --alert-caution-color: #f38ba8;
+
+  /* Markup */
+  --markup-mention-fill: #45475a;
+  --markup-interactive-hover-fill: #585b70;
+
+  /* Buttons – primary */
+  --button-primary-fill:#cba6f7;
+  --button-primary-active-fill: hsl(from #cba6f7 h s calc(l - 8));
+  --button-primary-text: #1e1e2e;
+
+  /* Buttons – secondary */
+  --button-secondary-fill: #313244;
+  --button-secondary-text: #cdd6f4;
+  --button-secondary-active-fill: #45475a;
+
+  /* Buttons – danger */
+  --button-danger-fill: #f38ba8;
+  --button-danger-active-fill: hsl(from #f38ba8 h s calc(l - 15));
+  --button-danger-text: #1e1e2e;
+  --button-danger-outline-text: #f38ba8;
+  --button-danger-outline-border: #f38ba8;
+  --button-danger-outline-active-fill: #2d1f24;
+  --button-danger-outline-active-border: hsl(
+    from #f38ba8 h s calc(l - 15)
+  );
+
+  /* Buttons – misc */
+  --button-inverted-fill: #cdd6f4;
+  --button-inverted-text: #1e1e2e;
+  --button-ghost-text: #cba6f7;
+  --button-outline-border: #cba6f7;
+  --button-outline-text: #cba6f7;
+  --button-outline-active-fill: transparent;
+  --button-outline-active-border: hsl(from #cba6f7 h s calc(l - 8));
+}
+
+/* Mocha Mauve variant with squared corners instead of rounded corners */
+:root {
+  --border-radius: 0px;
+  --border-radius-sm: 0px;
+  --border-radius-md: 0px;
+  --border-radius-lg: 0px;
+  --border-radius-xl: 0px;
+}
+
+*,
+*::before,
+*::after,
+button,
+input,
+textarea,
+select,
+[role="button"],
+[role="dialog"],
+[role="menu"],
+[role="menuitem"],
+[role="listbox"],
+[role="tooltip"],
+[class*="button"],
+[class*="card"],
+[class*="modal"],
+[class*="popover"],
+[class*="panel"],
+[class*="badge"],
+[class*="toast"],
+[class*="notice"],
+[class*="dropdown"],
+[class*="chip"],
+[class*="container"] {
+  border-radius: 0 !important;
+}
+
+button,
+input,
+textarea,
+select,
+[role="button"],
+[role="dialog"],
+[role="menu"],
+[role="menuitem"],
+[role="listbox"],
+[role="tooltip"],
+[class*="button"],
+[class*="card"],
+[class*="modal"],
+[class*="popover"],
+[class*="panel"],
+[class*="badge"],
+[class*="toast"],
+[class*="notice"],
+[class*="dropdown"],
+[class*="chip"],
+[class*="container"] {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+:root{[class*="DMList.module__clickableItem"] [class*=clickableItemIcon]{color:var(--brand-primary-fill)}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="DMList.module__clickableItemSelected"]{background-color:var(--button-primary-fill);color:var(--button-primary-text)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="GuildsLayout.module__guildListItem"]{border-radius:0!important}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="GuildsLayout.module__guildListItem"]{border-radius:0!important}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="DMList.module__clickableItem"] [class*=clickableItemIcon]{color:var(--brand-primary-fill)}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="DMList.module__clickableItemSelected"]{background-color:var(--button-primary-fill);color:var(--button-primary-text)}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="GuildsLayout.module__guildListItem"]{border-radius:0!important}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"] [class*=clickableItemIcon]{color:var(--brand-primary-fill)}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}[class*="DMList.module__clickableItemSelected"] [class*=clickableItemIcon]{background-color:var(--button-primary-text);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}[class*="GuildsLayout.module__guildListItem"]{>div{background:var(--background-primary);border:1px solid var(--button-primary-fill);color:var(--button-primary-fill)}:hover{border-color:var(--background-modifier-accent)}}[class*="GuildsLayout.module__guildListItem"]>*{border-radius:0!important}[class*="PremiumModal.module__contentContainer"]{color:var(--text-primary)}[class*="DMList.module__clickableItem"]{border-radius:0!important}
